@@ -8,7 +8,7 @@ def set_default(name, *args, &block)
 end
 
 namespace :deploy do
-  desc "Install everything onto the server"
+  desc "Install everything into the server"
   task :install do
     run "#{sudo} apt-get -y update"
     run "#{sudo} apt-get -y install python-software-properties"
